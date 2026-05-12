@@ -1,19 +1,26 @@
+```json id="g1vzhv"
 {
   "name": "idarati",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+
   "scripts": {
     "dev": "next dev",
-    "build": "npx prisma generate --schema=prisma/schema.prisma && next build",
+    "build": "prisma generate && next build",
     "start": "next start",
     "lint": "next lint",
-    "postinstall": "npx prisma generate --schema=prisma/schema.prisma"
+    "postinstall": "prisma generate"
   },
+
+  "prisma": {
+    "schema": "prisma/schema.prisma"
+  },
+
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "module",
+
   "dependencies": {
     "@prisma/client": "^6.19.3",
     "@tailwindcss/postcss": "^4.2.4",
@@ -21,24 +28,26 @@
     "clsx": "^2.1.1",
     "date-fns": "^4.1.0",
     "framer-motion": "^12.38.0",
-    "lucide-react": "^1.11.0",
-    "next": "^16.2.4",
+    "lucide-react": "^0.511.0",
+    "next": "^15.3.3",
     "prisma": "^6.19.3",
-    "react": "^19.2.5",
-    "react-dom": "^19.2.5",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "react-to-print": "^3.3.0",
     "tailwind-merge": "^3.5.0",
     "zod": "^4.3.6"
   },
+
   "devDependencies": {
     "@types/bwip-js": "^3.2.3",
-    "@types/node": "^25.6.0",
-    "@types/react": "^19.2.14",
-    "@types/react-dom": "^19.2.3",
-    "autoprefixer": "^10.5.0",
-    "postcss": "^8.5.12",
-    "tailwindcss": "^4.2.4",
+    "@types/node": "^22.15.21",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^4.1.7",
     "tsx": "^4.21.0",
-    "typescript": "^6.0.3"
+    "typescript": "^5.8.3"
   }
 }
+```
